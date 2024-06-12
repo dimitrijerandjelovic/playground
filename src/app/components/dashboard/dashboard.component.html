@@ -4,12 +4,7 @@
   <div>
     <div>
       <label>Id</label>
-      <input
-        type="text"
-        [(ngModel)]="item.id"
-        (focus)="onFocus(item, 'id')"
-        (blur)="onBlur()"
-      />
+      <input type="text" [value]="item.id" readonly disabled />
     </div>
     <div>
       <label>First Name</label>

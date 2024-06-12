@@ -40,6 +40,6 @@ export class FilepickerComponent {
   }
 
   isSelected(item: IItem, column: ColumnType) {
-    return item.id === this.selectedItem?.id && column === this.selectedColumn;
+    return item.id == this.selectedItem?.id && column == this.selectedColumn;
   }
 }

@@ -23,31 +23,31 @@ export class ItemsService {
 
 const mockItems: IItem[] = [
   {
-    id: 1,
+    id: '1',
     firstName: 'Dimitrije',
     lastName: 'Randjelovic',
     accountNumber: uuidv4(),
   },
   {
-    id: 2,
+    id: '2',
     firstName: 'Djordje',
     lastName: 'Jovic',
     accountNumber: uuidv4(),
   },
   {
-    id: 3,
+    id: '3',
     firstName: 'Lazar',
     lastName: 'Krmpot',
     accountNumber: uuidv4(),
   },
   {
-    id: 4,
+    id: '4',
     firstName: 'Jovan',
     lastName: 'Jelic',
     accountNumber: uuidv4(),
   },
   {
-    id: 5,
+    id: '5',
     firstName: 'Petar',
     lastName: 'Kovacevic',
     accountNumber: uuidv4(),
@@ -55,7 +55,7 @@ const mockItems: IItem[] = [
 ];
 
 export interface IItem {
-  id: number;
+  id: string;
   firstName: string;
   lastName: string;
   accountNumber: string;

@@ -1,11 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { IItem, ItemsService } from './services/items.service';
 
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { ExcelService } from './services/excel.service';
-import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FilepickerComponent } from './components/filepicker/filepicker.component';
 @Component({

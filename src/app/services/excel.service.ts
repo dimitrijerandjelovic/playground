@@ -29,7 +29,7 @@ export class ExcelService {
         worksheet
       );
 
-      toReturn.push({ id: +id, firstName, lastName, accountNumber });
+      toReturn.push({ id, firstName, lastName, accountNumber });
     }
 
     return toReturn;
