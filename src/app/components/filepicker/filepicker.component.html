@@ -1,0 +1,44 @@
+<div>
+  <input type="file" (change)="onFileChange($event)" />
+
+  @if(tableItems.length) {
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Account Number</th>
+      </tr>
+    </thead>
+    @for (item of tableItems; track $index) {
+    <tr>
+      <td [ngStyle]="{ border: isSelected(item, 'id') ? '1px solid red' : '' }">
+        {{ item.id }}
+      </td>
+      <td
+        [ngStyle]="{
+          border: isSelected(item, 'first') ? '1px solid red' : ''
+        }"
+      >
+        {{ item.firstName }}
+      </td>
+      <td
+        [ngStyle]="{
+          border: isSelected(item, 'last') ? '1px solid red' : ''
+        }"
+      >
+        {{ item.lastName }}
+      </td>
+      <td
+        [ngStyle]="{
+          border: isSelected(item, 'account') ? '1px solid red' : ''
+        }"
+      >
+        {{ item.accountNumber }}
+      </td>
+    </tr>
+    }
+  </table>
+  }
+</div>

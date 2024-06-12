@@ -1,0 +1,43 @@
+<div>
+  <button (click)="getMockApiData()">Get MockApiData</button>
+  @for (item of items; track $index) {
+  <div>
+    <div>
+      <label>Id</label>
+      <input
+        type="text"
+        [(ngModel)]="item.id"
+        (focus)="onFocus(item, 'id')"
+        (blur)="onBlur()"
+      />
+    </div>
+    <div>
+      <label>First Name</label>
+      <input
+        type="text"
+        [(ngModel)]="item.firstName"
+        (focus)="onFocus(item, 'first')"
+        (blur)="onBlur()"
+      />
+    </div>
+    <div>
+      <label>Last Name</label>
+      <input
+        type="text"
+        [(ngModel)]="item.lastName"
+        (focus)="onFocus(item, 'last')"
+        (blur)="onBlur()"
+      />
+    </div>
+    <div>
+      <label>Account Number</label>
+      <input
+        type="text"
+        [(ngModel)]="item.accountNumber"
+        (focus)="onFocus(item, 'account')"
+        (blur)="onBlur()"
+      />
+    </div>
+  </div>
+  }
+</div>
